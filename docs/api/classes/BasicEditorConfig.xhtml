@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - BasicEditorConfig</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">BasicEditorConfig</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/code/BasicHtmlEditorConfig.php.xhtml#line13">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>BasicEditorConfig</h1>
+        <h4>A PHP version of TinyMCE's configuration, to allow various parameters to be configured on a site or section basis</h4>
+        <p>There can be multiple HtmlEditorConfig's, which should always be created / accessed using HtmlEditorConfig::get. You can then set<br/>the currently active config using set_active. Whichever config is active when HtmlEditorField#Field is called wins.</p>
+        <ul>
+          <li>Author: "Hamish Friedlander" &lt;hamish@silverstripe.com&gt;</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class BasicEditorConfig
+            {<br/><ul class="none"><li>// members</li><li>public array <a href="#members">$configs</a>;
+                    </li><li>public <a href="#members">$current</a>;
+                    </li><li>protected array <a href="#members">$settings</a>;
+                    </li><li>protected array <a href="#members">$plugins</a>;
+                    </li><li>protected array <a href="#members">$buttons</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public static HtmlEditorConfig <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/get.xhtml">get</a>()
+                    </li><li>public static null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/set_active.xhtml">set_active</a>()
+                    </li><li>public static HtmlEditorConfig <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/get_active.xhtml">get_active</a>()
+                    </li><li>public static array <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/get_available_configs_map.xhtml">get_available_configs_map</a>()
+                    </li><li>public mixed <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/getOption.xhtml">getOption</a>()
+                    </li><li>public mixed <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/setOption.xhtml">setOption</a>()
+                    </li><li>public null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/setOptions.xhtml">setOptions</a>()
+                    </li><li>public null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/enablePlugins.xhtml">enablePlugins</a>()
+                    </li><li>public null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/disablePlugins.xhtml">disablePlugins</a>()
+                    </li><li>public Array <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/getPlugins.xhtml">getPlugins</a>()
+                    </li><li>public null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/setButtonsForLine.xhtml">setButtonsForLine</a>()
+                    </li><li>public null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/addButtonsToLine.xhtml">addButtonsToLine</a>()
+                    </li><li>protected boolean <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/modifyButtons.xhtml">modifyButtons</a>()
+                    </li><li>public boolean <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/insertButtonsBefore.xhtml">insertButtonsBefore</a>()
+                    </li><li>public boolean <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/insertButtonsAfter.xhtml">insertButtonsAfter</a>()
+                    </li><li>public null <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/removeButtons.xhtml">removeButtons</a>()
+                    </li><li>public string <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/generateJS.xhtml">generateJS</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="buttons">
+              <strong>$buttons</strong>
+              <br/>
+              <span class="indent">Holder list of buttons, organised by line</span>
+            </li>
+            <li id="plugins">
+              <strong>$plugins</strong>
+              <br/>
+              <span class="indent">Holder list of enabled plugins</span>
+            </li>
+            <li id="settings">
+              <strong>$settings</strong>
+              <br/>
+              <span class="indent">Holder for all TinyMCE settings _except_ plugins and buttons</span>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="configs">
+              <strong>$configs</strong>
+            </li>
+            <li id="current">
+              <strong>$current</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="modifyButtons"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/modifyButtons.xhtml">modifyButtons()</a>
+                — Internal function for adding and removing buttons related to another button</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="addButtonsToLine"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/addButtonsToLine.xhtml">addButtonsToLine()</a>
+                — Add buttons to the end of a line</li>
+            <li id="disablePlugins"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/disablePlugins.xhtml">disablePlugins()</a>
+                — Enable one or several plugins. Will properly handle being passed a plugin that is already disabled</li>
+            <li id="enablePlugins"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/enablePlugins.xhtml">enablePlugins()</a>
+                — Enable one or several plugins. Will maintain unique list if already enabled plugin is re-passed. If passed in as a map of plugin-name to path, the plugin will be loaded by tinymce.PluginManager.load() instead of through tinyMCE.init().</li>
+            <li id="generateJS"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/generateJS.xhtml">generateJS()</a>
+                — Generate the javascript that will set tinyMCE's configuration to that of the current settings of this object</li>
+            <li id="get"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/get.xhtml">get()</a>
+                — Get the HtmlEditorConfig object for the given identifier. This is a correct way to get an HtmlEditorConfig instance - do not call 'new'</li>
+            <li id="getOption"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/getOption.xhtml">getOption()</a>
+                — Get the current value of an option</li>
+            <li id="getPlugins">
+              <a title="BasicEditorConfig" href="../classes/BasicEditorConfig/getPlugins.xhtml">getPlugins()</a>
+            </li>
+            <li id="get_active"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/get_active.xhtml">get_active()</a>
+                — Get the currently active configuration object</li>
+            <li id="get_available_configs_map"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/get_available_configs_map.xhtml">get_available_configs_map()</a>
+                — Get the available configurations as a map of friendly_name to configuration name.</li>
+            <li id="insertButtonsAfter"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/insertButtonsAfter.xhtml">insertButtonsAfter()</a>
+                — Insert buttons after the first occurance of another button</li>
+            <li id="insertButtonsBefore"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/insertButtonsBefore.xhtml">insertButtonsBefore()</a>
+                — Insert buttons before the first occurance of another button</li>
+            <li id="removeButtons"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/removeButtons.xhtml">removeButtons()</a>
+                — Remove the first occurance of buttons</li>
+            <li id="setButtonsForLine"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/setButtonsForLine.xhtml">setButtonsForLine()</a>
+                — Totally re-set the buttons on a given line</li>
+            <li id="setOption"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/setOption.xhtml">setOption()</a>
+                — Set the value of one option</li>
+            <li id="setOptions"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/setOptions.xhtml">setOptions()</a>
+                — Set multiple options</li>
+            <li id="set_active"><a title="BasicEditorConfig" href="../classes/BasicEditorConfig/set_active.xhtml">set_active()</a>
+                — Set the currently active configuration object</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span/>
+    </footer>
+  </body>
+</html>
