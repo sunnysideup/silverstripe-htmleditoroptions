@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<index xmlns="http://xml.phpdox.net/src" basedir="/var/www/_modules/htmleditoroptions/trunk">
-  <namespace name="">
-    <class name="BasicEditorConfig" src="code/BasicHtmlEditorConfig.php" description="A PHP version of TinyMCE's configuration, to allow various parameters to be configured on a site or section basis" xml="classes/BasicEditorConfig.xml"/>
-  </namespace>
-</index>
